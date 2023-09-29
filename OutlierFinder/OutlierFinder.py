@@ -26,7 +26,7 @@ def find_outliers(x, return_bool=True):
   """
   x = x.flatten()
   # Find the number of elements of x that's <= each element
-  sample_cdf = rankdata(x, method="max") / x.shape # CDF of observations
+  sample_cdf = rankdata(x, method="max") / (1 + x.shape[0]) # CDF of observations
   dist_quantiles = norm.ppf(sample_cdf) # theoretical quantiles
   # Plot actual quantiles (y-axis) vs. theoretical quantiles (x-axis)
   # In other words, a Q-Q plot
