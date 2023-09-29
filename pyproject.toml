@@ -1,0 +1,14 @@
+[project]
+name = "OutlierFinder"
+version = "0.0.1"
+authors = [{name="Alan Tseng"}]
+description = "Finds 1D outliers that deviate from a normal distribution"
+readme = "README.md"
+dependencies = ["scipy", "scikit-learn", "pandas", "numpy"]
+
+[project.urls]
+"Homepage" = "https://github.com/agentlans/OutlierFinder"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
