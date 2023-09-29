@@ -2,8 +2,7 @@
 Find 1D outliers assuming a normal distribution
 
 # Install
-1. Clone the repository `git clone https://github.com/agentlans/OutlierFinder`
-3. Install `pip install .`
+Just run `pip install git+https://github.com/agentlans/OutlierFinder`
 
 # Use
 
